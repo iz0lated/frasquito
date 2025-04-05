@@ -1,0 +1,88 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fffaf8;
+  color: #4a3b37;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #d96c6c;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.note {
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.message {
+  display: none;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* Colores personalizados */
+.rojo { background-color: #ffe5e5; border-left: 6px solid #e74c3c; }
+.lila { background-color: #f7e9ff; border-left: 6px solid #a259ff; }
+.azul { background-color: #e5f0ff; border-left: 6px solid #3498db; }
+.verde { background-color: #e9ffe5; border-left: 6px solid #2ecc71; }
+.marron { background-color: #f0e0d6; border-left: 6px solid #8e735b; }
+
+.legend {
+  background-color: #fefefe;
+  border-left: 4px solid #d96c6c;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.legend p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Colores de los puntitos */
+.dot.rojo { background-color: #e74c3c; }
+.dot.lila { background-color: #a259ff; }
+.dot.azul { background-color: #3498db; }
+.dot.verde { background-color: #2ecc71; }
+.dot.marron { background-color: #8e735b; }
+
